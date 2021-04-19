@@ -1,22 +1,9 @@
-@import "global/variables";
+@import "foundation/class-font";
+@import "foundation/class-width-height";
+@import "foundation/class-margin-padding";
+@import "foundation/class-color";
+@import "foundation/class-background";
+@import "global/html5-tags";
+@import "global/containers";
 
-*, *::before, *::after, html {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-}
-
-html {
-  font-size: $fs-root;
-}
-
-body {
-  font-size: $fs-root;
-  font-family: $ff-primary;
-  color: $text-primary;
-  background-color: $bg-secondary;
-}
+@import "components/Hero";
