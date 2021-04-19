@@ -1,5 +1,15 @@
 @import "sneak-vars";
 
+.sneak-icon {
+  width: $sneak-icon-min-width;
+  height: $sneak-icon-min-width;
+  max-width: $sneak-icon-max-width;
+  @media (min-width: $break-point-45-rem) {
+    width: $sneak-icon-max-width;
+    height: $sneak-icon-max-width;
+  }
+}
+
 .social-icon {
   width: $size-social-logo;
   cursor: pointer;
