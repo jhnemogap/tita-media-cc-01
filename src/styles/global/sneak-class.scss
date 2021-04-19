@@ -1,0 +1,18 @@
+@import "sneak-vars";
+
+.social-icon {
+  width: $size-social-logo;
+  cursor: pointer;
+  @extend .p-2, .m-3;
+}
+
+.copyright {
+  display: inline-block;
+  letter-spacing: 0.30 * 1em;
+  text-align: center;
+  @extend .text-light, .p-2, .m-2;
+  .name-company {
+    @extend .text-brand-secondary;
+    background-color: white;
+  }
+}
