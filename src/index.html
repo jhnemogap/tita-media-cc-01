@@ -5,12 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
     <title>SNEAK</title>
-    <script defer type="module" src="app.js"></script>
+
+    <link rel="stylesheet" href="styles/index.scss" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Questrial&display=swap"
+      rel="stylesheet"
+    >
+    <script defer src="index.js"></script>
   </head>
   <body>
     <div id="app" class="app">
-      <button id="myBtn">dar</button>
+      <header id="header" class="header"></header>
+      <!-- /#header -->
+
+      <section id="hero" class="hero">
+        <div class="inner-central-container">
+          <h1 class="title">EXPLORE BEYOND HORIZON</h1>
+          <p class="description">
+            Magna mundi referrentur quo, no rebum dignissim qui. Per quodsi accusata id, agam labores.
+          </p>
+          <a href="#main?search=trending" class="go-tag-id-variant-secondary">
+            VIEW OUR WORK
+          </a>
+          <!-- /.action-our-work -->
+        </div>
+        <!-- /.inner-main-container -->
+      </section>
+      <!-- /#hero -->
+
+      <main id="main" class="main"></main>
+      <!-- /#main -->
+
+      <footer id="footer" class="footer"></footer>
+      <!-- /#footer -->
     </div>
   </body>
 </html>

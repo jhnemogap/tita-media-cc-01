@@ -1,0 +1,35 @@
+@import "../foundation/variables";
+
+*, *::before, *::after, html {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+html {
+  font-size: $font-size-root;
+}
+
+body {
+  font-size: $font-size-medium;
+  font-family: $font-family-primary;
+  color: $text-primary;
+  background-color: $bg-secondary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-title;
+}
+
+small {
+  font-size: $font-size-small;
+}
+
+a {
+  text-decoration: none;
+}

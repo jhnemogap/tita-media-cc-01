@@ -1,0 +1,28 @@
+@import "../foundation/variables";
+
+$break-point-22-rem: ($font-size-root * 22) - 1; // 16 * 22 => 352 - 1
+$break-point-24-rem: ($font-size-root * 24) - 1; // 16 * 24 => 384 - 1
+$break-point-25-rem: ($font-size-root * 25) - 1; // 16 * 25 => 400 - 1
+$break-point-30-rem: ($font-size-root * 30) - 1; // 16 * 30 => 480 - 1
+$break-point-32-rem: ($font-size-root * 32) - 1; // 16 * 32 => 512 - 1
+$break-point-35-rem: ($font-size-root * 35) - 1; // 16 * 35 => 560 - 1
+$break-point-36-rem: ($font-size-root * 36) - 1; // 16 * 36 => 576 - 1
+$break-point-40-rem: ($font-size-root * 40) - 1; // 16 * 40 => 640 - 1
+$break-point-45-rem: ($font-size-root * 45) - 1; // 16 * 45 => 720 - 1
+$break-point-48-rem: ($font-size-root * 48) - 1; // 16 * 48 => 768 - 1
+$break-point-60-rem: ($font-size-root * 60) - 1; // 16 * 60 => 960 - 1
+$break-point-64-rem: ($font-size-root * 64) - 1; // 16 * 64 => 1024 - 1
+$break-point-75-rem: ($font-size-root * 75) - 1; // 16 * 75 => 1200 - 1
+$break-point-79-rem: ($font-size-root * 79) - 1; // 16 * 79 => 1264 - 1
+$break-point-80-rem: ($font-size-root * 80) - 1; // 16 * 79 => 1280 - 1
+$break-point-85-rem: ($font-size-root * 85) - 1; // 16 * 79 => 1360 - 1
+$break-point-90-rem: ($font-size-root * 90) - 1; // 16 * 79 => 1440 - 1
+$break-point-100-rem: ($font-size-root * 100) - 1; // 16 * 79 => 1600 - 1
+$break-point-120-rem: ($font-size-root * 120) - 1; // 16 * 79 => 1920 - 1
+
+$min-number-cards: 1;
+$middle-number-cards: 2;
+$max-number-cards: 3;
+
+$max-vertical-gap: $size-large;
+$max-width-card: $size-10-x-large;

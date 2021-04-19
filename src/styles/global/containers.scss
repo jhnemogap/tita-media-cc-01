@@ -1,0 +1,14 @@
+@import "sneak-vars";
+
+.principal-container-in-body {
+  @extend .px-3;
+  @media (min-width: $break-point-60-rem) {
+    padding-right: $unit-6;
+    padding-left: $unit-6;
+  }
+}
+
+.inner-central-container {
+  @extend .mx-auto, .w-100;
+  max-width: ($max-number-cards * $max-width-card) + (($max-number-cards - 1) * $max-vertical-gap);
+}

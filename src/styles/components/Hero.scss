@@ -1,0 +1,38 @@
+@import "../global/sneak-vars";
+
+.hero {
+  text-align: center;
+  @extend .text-secondary, .bg-primary, .principal-container-in-body;
+
+  .inner-central-container {
+    padding: 17.5vw 0;
+  }
+  .title {
+    @extend .h2-size;
+    letter-spacing: 0.30 * 1em;
+    margin-bottom: 1.2em;
+  }
+  .description {
+    width: 80%;
+    margin-bottom: 2.5em;
+    @extend .mx-auto;
+  }
+
+  @media (min-width: $break-point-30-rem) {
+    .description {
+      width: 54%;
+    }
+  }
+
+  @media (min-width: $break-point-45-rem) {
+    .description {
+      font-size: $font-size-x-medium;
+    }
+  }
+
+  @media (min-width: $break-point-60-rem) {
+    .title {
+      font-size: $h1-size;
+    }
+  }
+}

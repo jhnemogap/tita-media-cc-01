@@ -1,0 +1,62 @@
+@import "scales";
+
+$unit: 8px;
+$size-root: 16px;
+
+$unit-0: $unit * $scale-0;
+$unit-1: $unit * $scale-1;
+$unit-2: $unit * $scale-2;
+$unit-3: $unit * $scale-3;
+$unit-4: $unit * $scale-4;
+$unit-5: $unit * $scale-5;
+$unit-6: $unit * $scale-6;
+
+$size-x-large: $scale-x-large * $size-root;
+$size-large: $scale-large * $size-root;
+$size-x-medium: $scale-x-medium * $size-root;
+$size-medium: $scale-medium * $size-root;
+$size-small: $scale-small * $size-root;
+$size-x-small: $scale-x-small * $size-root;
+
+$size-10-x-large: $scale-10-x-large * $size-root;
+$size-10-large: $scale-10-large * $size-root;
+$size-10-x-medium: $scale-10-x-medium * $size-root;
+$size-10-medium: $scale-10-medium * $size-root;
+$size-10-small: $scale-10-small * $size-root;
+$size-10-x-small: $scale-10-x-small * $size-root;
+
+$font-size-root: $size-root;
+$font-size-x-large: $scale-x-large * $font-size-root;
+$font-size-large: $scale-large * $font-size-root;
+$font-size-x-medium: $scale-x-medium * $font-size-root;
+$font-size-medium: $scale-medium * $font-size-root;
+$font-size-small: $scale-small * $font-size-root;
+$font-size-x-small: $scale-x-small * $font-size-root;
+
+$font-family-primary: "Questrial", sans-serif;
+$font-family-title: "Montserrat", sans-serif;
+
+$h1-size: $font-size-root * $scale-x-large;
+$h2-size: $font-size-root * $scale-large;
+$h3-size: $font-size-root * $scale-x-medium;
+$h4-size: $font-size-root * $scale-medium;
+$h5-size: $font-size-root * $scale-small;
+$h6-size: $font-size-root * $scale-x-small;
+
+$brand-color-primary: #fc758c;
+$brand-color-primary-actions: #ff5672;
+$brand-color-secondary: #f7f7f7;
+
+$text-brand: #707070;
+$text-brand-secondary: $brand-color-primary-actions;
+$text-white: #ffffff;
+$text-primary: #303030;
+$text-secondary: $brand-color-secondary;
+$text-light: #c3d0d8;
+
+$bg-white: #ffffff;
+$bg-light: $brand-color-secondary;
+$bg-primary: $brand-color-primary;
+$bg-secondary: $brand-color-secondary;
+$bg-action: $brand-color-primary-actions;
+$bg-dark: $text-primary;
