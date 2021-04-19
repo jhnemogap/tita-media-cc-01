@@ -1,0 +1,37 @@
+@import "../global/sneak-vars";
+
+.sneak-logo {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @extend .p-4;
+
+  > .sneak-name {
+    text-transform: uppercase;
+    letter-spacing: 0.4 * 1em;
+    @extend .ml-4, .font-family-title;
+    > .company {
+      @extend .h3-size;
+      font-weight: bold;
+    }
+    > .description {
+      font-size: 0.50em;
+      letter-spacing: 0.40 * 1em;
+      @extend .text-light;
+    }
+  }
+
+  @media (min-width: $break-point-45-rem) {
+    > .sneak-name {
+      margin-left: $unit-6;
+      > .company {
+        font-size: $font-size-large;
+      }
+      > .description {
+        font-size: 0.625em;
+        letter-spacing: 0.50 * 1em;
+      }
+    }
+  }
+}

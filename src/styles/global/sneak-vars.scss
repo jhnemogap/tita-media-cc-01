@@ -1,4 +1,5 @@
 @import "../foundation/variables";
+@import "../foundation/mixins-funtions";
 
 $break-point-22-rem: ($font-size-root * 22) - 1; // 16 * 22 => 352 - 1
 $break-point-24-rem: ($font-size-root * 24) - 1; // 16 * 24 => 384 - 1
@@ -28,3 +29,5 @@ $max-vertical-gap: $size-large;
 $max-width-card: $size-10-x-large;
 
 $size-social-logo: $size-x-medium;
+$sneak-icon-max-width: custom-space-multiplier(3.0);
+$sneak-icon-min-width: custom-space-multiplier(2.5);
