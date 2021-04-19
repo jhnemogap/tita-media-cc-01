@@ -1,9 +1,8 @@
 @import "../foundation/variables";
 
 .go-tag-id-variant-primary {
-  @extend .py-3, .px-6, .text-primary, .bg-secondary;
+  @extend .py-4, .px-6, .text-primary, .bg-secondary;
   display: inline-block;
-  width: 100%;
   &:hover, &:focus {
     @extend .text-secondary, .bg-action;
   }
