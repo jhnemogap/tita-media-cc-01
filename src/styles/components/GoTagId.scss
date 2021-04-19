@@ -1,0 +1,17 @@
+@import "../foundation/variables";
+
+.go-tag-id-variant-primary {
+  @extend .py-4, .px-6, .text-primary, .bg-secondary;
+  display: inline-block;
+  &:hover, &:focus {
+    @extend .text-secondary, .bg-action;
+  }
+}
+
+.go-tag-id-variant-secondary {
+  @extend .go-tag-id-variant-primary;
+  color: $text-brand-secondary;
+  &:hover, &:focus {
+    @extend .bg-dark;
+  }
+}

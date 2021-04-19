@@ -48,6 +48,7 @@ $brand-color-primary-actions: #ff5672;
 $brand-color-secondary: #f7f7f7;
 
 $text-brand: #707070;
+$text-brand-secondary: $brand-color-primary-actions;
 $text-white: #ffffff;
 $text-primary: #303030;
 $text-secondary: $brand-color-secondary;
@@ -58,3 +59,4 @@ $bg-light: $brand-color-secondary;
 $bg-primary: $brand-color-primary;
 $bg-secondary: $brand-color-secondary;
 $bg-action: $brand-color-primary-actions;
+$bg-dark: $text-primary;
