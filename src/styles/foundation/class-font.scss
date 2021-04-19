@@ -1,0 +1,18 @@
+@import "variables";
+
+.font-family-primary { font-family: $font-family-primary }
+.font-family-title { font-family: $font-family-title; }
+
+.font-size-x-large { font-size: $font-size-x-large; }
+.font-size-large { font-size: $font-size-large; }
+.font-size-x-medium { font-size: $font-size-x-medium; }
+.font-size-medium { font-size: $font-size-medium; }
+.font-size-small { font-size: $font-size-small; }
+.font-size-x-small { font-size: $font-size-x-small; }
+
+.h1-size { font-size: $h1-size; }
+.h2-size { font-size: $h2-size; }
+.h3-size { font-size: $h3-size; }
+.h4-size { font-size: $h4-size; }
+.h5-size { font-size: $h5-size; }
+.h6-size { font-size: $h6-size; }

@@ -1,0 +1,23 @@
+$scale-10: 10;
+
+$scale-0: 0.00;
+$scale-1: 0.25;
+$scale-2: 0.50;
+$scale-3: 1.00;
+$scale-4: 1.50;
+$scale-5: 2.00;
+$scale-6: 3.00;
+
+$scale-x-large: 2.5;
+$scale-large: 2.0;
+$scale-x-medium: 1.5;
+$scale-medium: 1.0;
+$scale-small: 0.875;
+$scale-x-small: 0.750;
+
+$scale-10-x-large: $scale-10 * $scale-x-large;
+$scale-10-large: $scale-10 * $scale-large;
+$scale-10-x-medium: $scale-10 * $scale-x-medium;
+$scale-10-medium: $scale-10 * $scale-medium;
+$scale-10-small: $scale-10 * $scale-small;
+$scale-10-x-small: $scale-10 * $scale-x-small;
