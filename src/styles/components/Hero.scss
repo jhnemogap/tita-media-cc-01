@@ -2,7 +2,7 @@
 
 .hero {
   text-align: center;
-  @extend .text-secondary, .bg-primary, .principal-container-in-body;
+  @extend .font-size-medium, .text-secondary, .bg-primary, .principal-container-in-body;
 
   .inner-central-container {
     padding: 17.5vw 0;
@@ -16,17 +16,19 @@
     width: 80%;
     margin-bottom: 2.5em;
     @extend .mx-auto;
+    letter-spacing: 0.20 * 1em;
+    line-height: 1.4;
   }
 
   @media (min-width: $break-point-30-rem) {
     .description {
-      width: 54%;
+      width: 50%;
     }
   }
 
   @media (min-width: $break-point-45-rem) {
     .description {
-      font-size: $font-size-x-medium;
+      font-size: 1.125em;
     }
   }
 

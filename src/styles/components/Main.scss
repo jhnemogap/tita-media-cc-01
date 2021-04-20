@@ -1,14 +1,27 @@
 @import "../global/sneak-vars";
 
 .main {
+  @extend .my-6, .py-6, .bg-transparent, .principal-container-in-body;
+  .inner-central-container {
+    @extend .d-flex, .flex-column;
+    justify-content: center;
+    align-items: center;
+  }
   .link-nav-list {
     display: none;
+    @extend .my-6, .py-6;
+  }
+  .gallery-wrapper {
+    @extend .my-6;
+  }
+  #show-more {
+    @extend .my-6;
+    border: none;
   }
 
   @media (min-width: $break-point-45-rem) {
     .link-nav-list {
       display: block;
-      margin: auto;
       width: fit-content;
       > .nav-list-item {
         display: inline-block;
