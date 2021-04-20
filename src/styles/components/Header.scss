@@ -4,7 +4,7 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  @extend .py-4, .d-flex, .bg-secondary;
+  @extend .py-2, .d-flex, .bg-secondary;
   justify-content: space-around;
 
   @media (min-width: $break-point-48-rem) {

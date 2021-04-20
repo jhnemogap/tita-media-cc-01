@@ -1,6 +1,7 @@
 @import "../foundation/variables";
 @import "../foundation/mixins-funtions";
 
+$break-point-20-rem: ($font-size-root * 20) - 1; // 16 * 20 => 320 - 1
 $break-point-22-rem: ($font-size-root * 22) - 1; // 16 * 22 => 352 - 1
 $break-point-24-rem: ($font-size-root * 24) - 1; // 16 * 24 => 384 - 1
 $break-point-25-rem: ($font-size-root * 25) - 1; // 16 * 25 => 400 - 1
