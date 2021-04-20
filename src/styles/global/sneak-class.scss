@@ -10,11 +10,13 @@
   }
 }
 
+
 .social-icon {
   width: $size-social-logo;
   cursor: pointer;
   @extend .p-2, .m-3;
 }
+
 
 .copyright {
   display: inline-block;
@@ -27,6 +29,8 @@
   }
 }
 
+
+// **** Burger icons ****
 .burger-icon {
   @extend .py-2, .px-3, .m-auto;
   display: inline-block;
@@ -68,5 +72,47 @@
       transform-origin: bottom left;
       transform: rotate(-45deg);
     }
+  }
+}
+
+
+// **** Masonry style *****
+// Variables
+$image-size: $unit-2 + 1px;
+$gap-size: $size-large;
+
+.grid-gallery-masonry {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: $image-size;
+  grid-gap: $gap-size;
+  grid-auto-flow: row dense;
+  &__item {
+    &:nth-child(1n+1) { grid-row: span 64; }
+    &:nth-child(2n+1) { grid-row: span 50; }
+    &:nth-child(3n+1) { grid-row: span 108; }
+    &:nth-child(4n+1) { grid-row: span 120; }
+    &:nth-child(5n+1) { grid-row: span 95; }
+    &:nth-child(6n+1) { grid-row: span 54; }
+    &:nth-child(7n+1) { grid-row: span 96; }
+    &:nth-child(8n+1) { grid-row: span 135; }
+    &:nth-child(9n+1) { grid-row: span 60; }
+    &:nth-child(10n+1) { grid-row: span 96; }
+    &:nth-child(11n+1) { grid-row: span 100; }
+    &:nth-child(12n+1) { grid-row: span 58; }
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  //@media (min-width: $break-point-20-rem) {
+  //  grid-template-columns: 1fr;
+  //}
+  @media (min-width: $break-point-48-rem) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: $break-point-64-rem) {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
