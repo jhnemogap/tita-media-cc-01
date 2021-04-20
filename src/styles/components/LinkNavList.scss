@@ -13,4 +13,10 @@
       font-size: $h4-size;
     }
   }
+
+  @media (min-width: $break-point-64-rem) {
+    > .nav-list-item > .go-tag-id-variant-primary {
+      font-size: 1.125rem;
+    }
+  }
 }
