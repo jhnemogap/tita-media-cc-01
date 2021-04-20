@@ -17,3 +17,12 @@
     @extend .bg-dark;
   }
 }
+
+.go-tag-id-variant-info {
+  @extend .go-tag-id-variant-primary;
+  color: $text-secondary;
+  background-color: $bg-action;
+  &:hover, &:focus {
+    background-color: $text-light;
+  }
+}

@@ -1,7 +1,7 @@
 @import "../global/sneak-vars";
 
 .footer {
-  @extend .py-5, .bg-secondary, .principal-container-in-body;
+  @extend .py-6, .bg-secondary, .principal-container-in-body;
   .inner-central-container {
     display: flex;
     flex-direction: column;
