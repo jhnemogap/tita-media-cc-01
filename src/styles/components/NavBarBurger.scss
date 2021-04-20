@@ -1,0 +1,33 @@
+@import "../global/sneak-vars";
+
+.nav-bar-burger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  .link-nav-list {
+    display: none;
+  }
+
+  @media (min-width: $break-point-60-rem) {
+    .burger-icon { display: none; }
+    .link-nav-list {
+      display: inline-block;
+      .nav-list-item {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.nav-bar-burger.nav-bar-burger-toggle-on {
+  position: absolute;
+  z-index: 1000;
+  @extend .w-100, .bg-secondary;
+  .link-nav-list {
+    @extend .d-block, .my-4;
+    .nav-list-item {
+      @extend .d-inline-block, .w-100vw;
+    }
+  }
+}

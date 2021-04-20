@@ -18,8 +18,8 @@
   </head>
   <body>
     <div id="app" class="app">
-      <header id="header" class="header">
-        <a href="/">
+      <header id="header" class="header py-4 d-flex" style="justify-content: space-around; position: relative">
+        <a href="/" aria-label="go to home">
           <div class="sneak-logo">
             <img src="../public/images/sneak-icon.webp" alt="sneak-icon" class="sneak-icon">
             <div class="sneak-name">
@@ -29,34 +29,45 @@
           </div>
           <!-- /.sneak-logo -->
         </a>
-
-        <ul class="link-nav-list">
-          <li class="nav-list-item">
-            <a href="?search=trending#main" class="go-tag-id-variant-primary">
-              All
-            </a>
-          </li>
-          <li class="nav-list-item">
-            <a href="?search=branding#main" class="go-tag-id-variant-primary">
-              Branding
-            </a>
-          </li>
-          <li class="nav-list-item">
-            <a href="?search=web#main" class="go-tag-id-variant-primary">
-              Web
-            </a>
-          </li>
-          <li class="nav-list-item">
-            <a href="?search=photography#main" class="go-tag-id-variant-primary">
-              Photography
-            </a>
-          </li>
-          <li class="nav-list-item">
-            <a href="?search=app#main" class="go-tag-id-variant-primary">
-              App
-            </a>
-          </li>
-        </ul>
+        <nav class="nav-bar-burger" role="navigation" aria-label="main navigation">
+          <button type="button" class="burger-icon">
+            <span class="burger-icon-inner-container">
+              <span class="burger-icon-line"></span>
+              <span class="burger-icon-line"></span>
+              <span class="burger-icon-line"></span>
+            </span>
+          </button>
+          <!-- /.burger-icon -->
+          <ul class="link-nav-list">
+            <li class="nav-list-item">
+              <a href="?search=trending#main" class="go-tag-id-variant-primary">
+                All
+              </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="?search=branding#main" class="go-tag-id-variant-primary">
+                Branding
+              </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="?search=web#main" class="go-tag-id-variant-primary">
+                Web
+              </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="?search=photography#main" class="go-tag-id-variant-primary">
+                Photography
+              </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="?search=app#main" class="go-tag-id-variant-primary">
+                App
+              </a>
+            </li>
+          </ul>
+          <!-- /.link-nav-list -->
+        </nav>
+        <!-- /.nav-bar-burger -->
       </header>
       <!-- /#header -->
 
