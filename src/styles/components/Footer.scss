@@ -1,0 +1,21 @@
+@import "../global/sneak-vars";
+
+.footer {
+  @extend .py-5, .bg-secondary, .principal-container-in-body;
+  .inner-central-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .copyright {
+    @extend .mb-5;
+  }
+  .social-icons {
+    @extend .my-4;
+    @media (min-width: $break-point-45-rem) {
+      margin-top: $unit-6;
+      margin-bottom: $unit-6;
+    }
+  }
+}

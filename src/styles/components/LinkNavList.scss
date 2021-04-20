@@ -1,0 +1,22 @@
+@import "../global/sneak-vars";
+
+.link-nav-list {
+  display: block;
+  > .nav-list-item {
+    > .go-tag-id-variant-primary {
+      @extend .w-100, .h5-size;
+    }
+  }
+
+  @media (min-width: $break-point-45-rem) {
+    > .nav-list-item > .go-tag-id-variant-primary {
+      font-size: $h4-size;
+    }
+  }
+
+  @media (min-width: $break-point-64-rem) {
+    > .nav-list-item > .go-tag-id-variant-primary {
+      font-size: 1.125rem;
+    }
+  }
+}

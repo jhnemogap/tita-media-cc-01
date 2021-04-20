@@ -1,0 +1,18 @@
+@import "../global/sneak-vars";
+
+.main {
+  .link-nav-list {
+    display: none;
+  }
+
+  @media (min-width: $break-point-45-rem) {
+    .link-nav-list {
+      display: block;
+      margin: auto;
+      width: fit-content;
+      > .nav-list-item {
+        display: inline-block;
+      }
+    }
+  }
+}

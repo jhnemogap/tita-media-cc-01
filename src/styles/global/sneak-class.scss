@@ -1,0 +1,72 @@
+@import "sneak-vars";
+
+.sneak-icon {
+  width: $sneak-icon-min-width;
+  height: $sneak-icon-min-width;
+  max-width: $sneak-icon-max-width;
+  @media (min-width: $break-point-45-rem) {
+    width: $sneak-icon-max-width;
+    height: $sneak-icon-max-width;
+  }
+}
+
+.social-icon {
+  width: $size-social-logo;
+  cursor: pointer;
+  @extend .p-2, .m-3;
+}
+
+.copyright {
+  display: inline-block;
+  letter-spacing: 0.30 * 1em;
+  text-align: center;
+  @extend .text-light, .p-2, .m-2;
+  .name-company {
+    @extend .text-brand-secondary;
+    background-color: white;
+  }
+}
+
+.burger-icon {
+  @extend .py-2, .px-3, .m-auto;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: solid $unit-1 $text-light;
+  border-radius: $unit-2;
+  background-color: transparent;
+  .burger-icon-line {
+    display: block;
+    width: $size-x-medium;
+    height: $unit-2;
+    margin: $unit-2 0;
+    border-radius: $unit-2;
+    transition: all .1s ease-in-out;
+    background-color: $text-light;
+  }
+  &:hover, &:focus-within {
+    border-color: $bg-action;
+    .burger-icon-line {
+      @extend .bg-action
+    }
+  }
+  // Rotate first and last span
+  &:focus-within {
+    > .burger-icon-inner-container {
+      display: block;
+      transform-origin: center;
+      transform: scale(1.2) translate(($unit-2 + ($unit-1 / 2)), 0);
+    }
+    .burger-icon-line:first-child {
+      transform-origin: top left;
+      transform: rotate(+45deg);
+    }
+    .burger-icon-line:nth-child(2) {
+      visibility: hidden;
+    }
+    .burger-icon-line:last-child {
+      transform-origin: bottom left;
+      transform: rotate(-45deg);
+    }
+  }
+}

@@ -16,6 +16,7 @@ html {
 }
 
 body {
+  position: relative;
   font-size: $font-size-medium;
   font-family: $font-family-primary;
   color: $text-primary;
@@ -32,4 +33,9 @@ small {
 
 a {
   text-decoration: none;
+  color: $text-primary;
+}
+
+li {
+  list-style: none;
 }

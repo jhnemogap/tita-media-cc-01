@@ -1,8 +1,10 @@
-@import "../foundation/variables";
+@import "../global/sneak-vars";
 
 .go-tag-id-variant-primary {
-  @extend .py-4, .px-6, .text-primary, .bg-secondary;
   display: inline-block;
+  text-align: center;
+  letter-spacing: 0.2 * 1em;
+  @extend .py-4, .px-6, .text-primary, .bg-secondary;
   &:hover, &:focus {
     @extend .text-secondary, .bg-action;
   }

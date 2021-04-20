@@ -18,7 +18,57 @@
   </head>
   <body>
     <div id="app" class="app">
-      <header id="header" class="header"></header>
+      <header id="header" class="header">
+        <a href="/" aria-label="go to home">
+          <div class="sneak-logo">
+            <img src="../public/images/sneak-icon.webp" alt="sneak-icon" class="sneak-icon">
+            <div class="sneak-name">
+              <p class="company">sneak</p>
+              <p class="description">creative portoflio</p>
+            </div>
+          </div>
+          <!-- /.sneak-logo -->
+        </a>
+        <nav class="nav-bar-burger" role="navigation" aria-label="main navigation">
+          <button type="button" class="burger-icon">
+            <span class="burger-icon-inner-container">
+              <span class="burger-icon-line"></span>
+              <span class="burger-icon-line"></span>
+              <span class="burger-icon-line"></span>
+            </span>
+          </button>
+          <!-- /.burger-icon -->
+          <ul class="link-nav-list">
+            <li class="nav-list-item">
+              <a href="?search=trending#main" class="go-tag-id-variant-primary">
+                All
+              </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="?search=branding#main" class="go-tag-id-variant-primary">
+                Branding
+              </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="?search=web#main" class="go-tag-id-variant-primary">
+                Web
+              </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="?search=photography#main" class="go-tag-id-variant-primary">
+                Photography
+              </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="?search=app#main" class="go-tag-id-variant-primary">
+                App
+              </a>
+            </li>
+          </ul>
+          <!-- /.link-nav-list -->
+        </nav>
+        <!-- /.nav-bar-burger -->
+      </header>
       <!-- /#header -->
 
       <section id="hero" class="hero">
@@ -27,7 +77,7 @@
           <p class="description">
             Magna mundi referrentur quo, no rebum dignissim qui. Per quodsi accusata id, agam labores.
           </p>
-          <a href="#main?search=trending" class="go-tag-id-variant-secondary">
+          <a href="?search=trending#main" class="go-tag-id-variant-secondary">
             VIEW OUR WORK
           </a>
           <!-- /.action-our-work -->
@@ -36,10 +86,53 @@
       </section>
       <!-- /#hero -->
 
-      <main id="main" class="main"></main>
+      <main id="main" class="main">
+        <div class="inner-central-container">
+          <ul class="link-nav-list">
+            <li class="nav-list-item">
+              <a href="?search=trending#main" class="go-tag-id-variant-primary">
+                All
+              </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="?search=branding#main" class="go-tag-id-variant-primary">
+                Branding
+              </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="?search=web#main" class="go-tag-id-variant-primary">
+                Web
+              </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="?search=photography#main" class="go-tag-id-variant-primary">
+                Photography
+              </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="?search=app#main" class="go-tag-id-variant-primary">
+                App
+              </a>
+            </li>
+          </ul>
+        </div>
+      </main>
       <!-- /#main -->
 
-      <footer id="footer" class="footer"></footer>
+      <footer id="footer" class="footer">
+        <div class="inner-central-container">
+          <small class="copyright">
+            &copy; 2021 - <span class="name-company">Sneak</span> All Right Reserved
+          </small>
+          <aside class="social-icons">
+            <img src="../public/images/facebook-Icon.svg" alt="go to twitter" class="social-icon">
+            <img src="../public/images/twitter-icon.svg" alt="go to twitter" class="social-icon">
+            <img src="../public/images/dribble-Icon.svg" alt="go to twitter" class="social-icon">
+            <img src="../public/images/google-plus-icon.svg" alt="go to twitter" class="social-icon">
+            <img src="../public/images/youtube-01-icon.svg" alt="go to twitter" class="social-icon">
+          </aside>
+        </div>
+      </footer>
       <!-- /#footer -->
     </div>
   </body>
