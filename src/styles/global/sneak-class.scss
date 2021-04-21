@@ -77,16 +77,16 @@
 
 
 // **** Masonry style *****
-// Variables
-$image-size: $unit-2 + 1px;
-$gap-size: $size-large;
-
 .gallery-masonry {
+  // Variables
+  $image-size: $unit-2 + 1px;
+  $gap-size: $size-large;
+
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: $image-size;
   grid-gap: 0 $gap-size;
-  grid-auto-flow: row;
+  grid-auto-flow: row dense;
   &__item {
     margin-bottom: $gap-size;
     &:nth-child(1n+1) { grid-row: span 64; }
@@ -101,6 +101,10 @@ $gap-size: $size-large;
     &:nth-child(10n+1) { grid-row: span 96; }
     &:nth-child(11n+1) { grid-row: span 100; }
     &:nth-child(12n+1) { grid-row: span 58; }
+  }
+  &__item--single-row {
+    margin-bottom: $gap-size;
+    grid-row: span 60;
   }
   &__image {
     width: 100%;
