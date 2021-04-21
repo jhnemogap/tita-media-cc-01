@@ -1,6 +1,7 @@
 const [burgerMenuHtmlId, burgerNavBarHtmlId] = ["burger-icon", "nav-bar-burger"];
 const [galleryMode1HtmlId, galleryMode2HtmlId] = ["change-gallery-mode-1", "change-gallery-mode-2"];
 const showMoreHtmlId = "show-more";
+const galleryHtmlId = "gallery-masonry";
 
 // ++++++  Change mode: main navigation menu  ++++++
 const $burgerIcon = document.getElementById(burgerMenuHtmlId);
@@ -26,6 +27,30 @@ const changeGalleryMode = (mode) => {
 
 $galleryMode1.onclick = () => changeGalleryMode("mode1");
 $galleryMode2.onclick = () => changeGalleryMode("mode2");
+
+
+// ++++++  Show Data  ++++++
+const $gallery = document.getElementById(galleryHtmlId);
+
+const CardForGallery = (photo) => {
+  const { src, photographer } = photo;
+  return (
+    `<article class="gallery-masonry__item">
+      <img
+        class="gallery-masonry__image"
+        src=${src?.medium ?? src?.tiny}
+        alt="take by ${photographer}"
+        itemProp="thumbnailUrl"
+      />
+    </article>
+    `
+  );
+};
+
+const insertNewCardToGallery = (photos) => {
+  const cardsJoinAsOneHtml = photos.map((item) => CardForGallery(item)).join("");
+  $gallery.insertAdjacentHTML("beforeend", cardsJoinAsOneHtml);
+};
 
 
 // ++++++  Read URL  ++++++
@@ -63,7 +88,10 @@ const getPhotosByPexels = () => {
   const firstRequestUrl = `${API_URL}/search?query=${valueToSearch}&per_page=${newPhotos.per_page}&page=`;
   const reqUrl = newPhotos.page === 0 ? firstRequestUrl : newPhotos?.next_page;
   if (reqUrl) {
-    getPhotos({ url: reqUrl, apiKey: API_KEY }, (resp) => { newPhotos = resp; });
+    getPhotos({ url: reqUrl, apiKey: API_KEY }, (resp) => {
+      newPhotos = resp;
+      insertNewCardToGallery(newPhotos.photos);
+    });
   }
 };
 
